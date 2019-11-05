@@ -8,3 +8,14 @@ get '/films' do
   @films = Film.all()
   erb(:'films/index')
 end
+
+get '/films/:id' do
+  @film = Film.find(params[:id].to_i - 1)
+  erb(:'films/details')
+end
+
+# get '/friends/:number' do
+#   friends = ["Rachel", "Chandler", "Ross", "Joey", "Monica", "Phoebe"]
+#   index = params[:number].to_i - 1
+#   return friends[index]
+# end
