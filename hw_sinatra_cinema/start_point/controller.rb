@@ -6,5 +6,5 @@ also_reload('./models/*')
 
 get '/films' do
   @film = Film.all()
-  erb(:index)
+  erb(:'films/index')
 end
