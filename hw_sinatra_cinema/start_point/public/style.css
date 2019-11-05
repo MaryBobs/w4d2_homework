@@ -1,0 +1,21 @@
+body {
+  background-color: #F2EFE9;
+  font-size: 2em;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+ul a {
+  text-decoration: none;
+}
+
+a {
+  color: #904E55;
+}
+
+h1 {
+  color: #564E58;
+}
