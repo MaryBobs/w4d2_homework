@@ -10,7 +10,7 @@ get '/films' do
 end
 
 get '/films/:id' do
-  @film = Film.find(params[:id].to_i - 1)
+  @film = Film.find(params[:id].to_i)
   erb(:'films/details')
 end
 
